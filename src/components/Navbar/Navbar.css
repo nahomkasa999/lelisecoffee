@@ -1,0 +1,107 @@
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    flex-direction: row; /* Stack logo above navbar */
+    align-items: center; /* Center align items */
+    justify-content: center;
+    margin-top: 20px; /* Space above the navbar */
+}
+
+/* Logo styling */
+.logo {
+    width: 90px; /* Logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: -40px; /* Overlap the navbar slightly if desired */
+    position: relative;
+    left: -100px;
+    top: -30px;
+}
+
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}
+
+/* Navbar styling */
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;
+    padding: 10px 20px; /* Padding around navbar */
+    background-color: #121212; /* Dark background for elegant look */
+    border-radius: 30px; /* Rounded corners */
+}
+
+/* Navbar menu */
+.NavbarMenu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 100px; /* Space between menu items */
+    background-color: #131007; /* Coffee-like dark brown */
+    padding: 15px 100px; /* Padding inside menu */
+    border-radius: 20px; /* Rounded corners */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+.NavbarMenu li {
+    cursor: pointer; /* Pointer on hover */
+    font-size: 1.1rem; /* Font size */
+    font-weight: 400; /* Font weight */
+    font-family: 'Lato', sans-serif; /* Font family */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.NavbarMenu li:hover {
+    color: #8c6239; /* Color change on hover */
+}
+
+/* Right side of Navbar */
+.Navbar_Right {
+    display: flex;
+    flex-direction: row;
+    gap: 15px; /* Space between icons */
+    justify-content: center; /* Center align */
+    align-items: center; /* Center vertically */
+}
+
+/* Icons in the Navbar */
+.Navbar_Right img {
+    width: 28px; /* Icon width */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.Navbar_Right img:hover {
+    transform: scale(1.1); /* Subtle zoom effect */
+    filter: brightness(1.2); /* Slight brightness increase */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1050px) {
+    .NavbarMenu {
+        gap: 60px; /* Adjust space between items */
+        padding: 15px 50px; /* Adjust padding */
+    }
+
+    .Navbar_Right {
+        gap: 10px; /* Narrow gap for smaller screens */
+    }
+
+    .NavbarMenu li {
+        font-size: 1rem; /* Reduce font size */
+    }
+}
+
+@media (max-width: 750px) {
+    .logo{
+        left: 0px;
+    }
+
+    .Navbar {
+          display: none;
+    }
+}

@@ -1,0 +1,96 @@
+/* Footer Container */
+.footer {
+    background-color: #1f1f1f; /* Dark background */
+    padding: 20px 0;
+    color: #f1f1f1; /* Light text color for readability */
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    border-radius: 0px 0px 30px 30px;
+  }
+  
+  /* Footer Content Wrapper */
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Left side - Logo and Social Icons */
+  .footer-content-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-content-left img {
+    max-width: 150px; /* Adjust logo size */
+    margin-right: 20px; /* Spacing between logo and icons */
+  }
+  
+  .footer-social-icons img {
+    margin: 0 10px;
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-social-icons img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+  }
+  
+  /* Right side - Contact Information */
+  .footer-content-right {
+    text-align: left;
+  }
+  
+  .footer-content-right h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  .footer-content-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-content-right li {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #cccccc;
+  }
+  
+  /* Horizontal Divider */
+  hr {
+    border: 1px solid #333;
+    margin: 20px 0;
+  }
+  
+  /* Copyright Section */
+  .footer-copyright {
+    font-size: 14px;
+    color: #777777;
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .footer-content-left, .footer-content-right {
+      margin-bottom: 20px;
+    }
+  
+    .footer-content-right h2 {
+      text-align: center;
+    }
+  }
+  

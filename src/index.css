@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Reset default margin, padding, and border-box sizing */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth; /* Ensure smooth scrolling across the site */
+}
+
+/* Body styling */
+body {
+  min-height: 100vh;
+  color: #121111; /* Darker text for contrast */
+  line-height: 1.6;
+  font-family: "Lato", sans-serif; /* Consistent font */
+}
+
+/* Anchor tags */
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+a:hover {
+  color: #8c6239; /* Coffee-like hover color for links */
+}
+
+/* Main app container */
+.app {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+/* Fade-in animation for smoother entrance */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Utility classes */
+.fade-in {
+  animation: fadeIn 0.7s ease-in-out;
+}
+@media (max-width: 768px) {
+  .app{
+    width: 100%;
+  }
+}

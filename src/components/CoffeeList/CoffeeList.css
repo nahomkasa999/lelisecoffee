@@ -1,0 +1,132 @@
+/* General Section */
+.products-section {
+    margin-top: 100px;
+    background-color: #f3ede1; /* Light coffee cream */
+    padding: 50px 0;
+}
+
+#CoffeeList {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.OurProducts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.OurProducts h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    color: #6b4f31; /* Rich coffee brown */
+}
+
+.OurProducts p {
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    font-size: 18px;
+    color: #4a4a4a; /* Subtle dark grey */
+}
+
+/* Product Items */
+.items {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for products */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.items:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.items img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #6b4f31; /* Coffee brown border for images */
+}
+
+.items .item-textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+}
+
+.item-textContainer h1 {
+    font-size: 24px;
+    font-family: "Playfair Display", serif;
+    color: #6b4f31; /* Rich coffee brown for titles */
+    margin-bottom: 8px;
+}
+
+.item-textContainer p {
+    font-size: 16px;
+    color: #333; /* Darker grey for product descriptions */
+}
+
+/* Hover effect for images */
+.items img:hover {
+    border: 2px solid #b07a56; /* Lighter coffee brown on hover */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .items {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        overflow: hidden;
+        padding: 0px;
+        width: 400px;
+    }
+
+    .item-textContainer {
+        width: 20%;
+    }
+    .OurProducts p {
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        text-align: center;
+        font-size: 14px;
+        color: #4a4a4a; /* Subtle dark grey */
+    }
+    #CoffeeList{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-left: 500px;
+        overflow: scroll;
+        margin-bottom:100px ;
+    }
+    .CoffeList-Right {
+        display: flex;
+        flex-direction: row;
+    }
+    .CoffeList-Left{
+        display: flex;
+        flex-direction: row;
+    }
+    
+   
+}

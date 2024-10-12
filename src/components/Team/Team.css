@@ -1,0 +1,43 @@
+.Team {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start; /* Changed to flex-start for better alignment of items */
+    gap: 40px; /* Reduced gap for a more cohesive look */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    padding: 20px; /* Added padding for better spacing */
+    background: #eaeaea;
+    border-radius: 20px;
+}
+
+.TeamHeader {
+    display: flex;
+    flex-direction: column; /* Changed to column for better title alignment */
+    align-items: center; /* Center align headers */
+    margin: 50px; /* Maintain margin for visual separation */
+    text-align: center; /* Center text for a more polished look */
+}
+
+.experts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Changed to flex-start for a more natural flow */
+    width: 300px;
+    gap: 15px; /* Slightly reduced gap for a more compact design */
+    height: auto; /* Changed to auto to allow dynamic height based on content */
+    padding: 10px; /* Added padding for inner spacing */
+    transition: transform 0.3s; /* Added a transition effect for hover */
+}
+
+.experts:hover {
+    transform: translateY(-5px); /* Subtle hover effect for interactivity */
+}
+
+.experts img {
+    width: 100%; /* Set width to 100% to fill the parent */
+    height: 300px; /* Set a fixed height to ensure consistency */
+    border-radius: 20px;
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+

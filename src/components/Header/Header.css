@@ -1,0 +1,132 @@
+/* General Header */
+.Header {
+    width: 100%;
+    height: 75vh;
+    margin: 30px auto;
+    background: url("/header_img.png") no-repeat center center;
+    background-size: cover; /* Ensure the background covers the entire header area */
+    position: relative;
+    animation: fadeIn 0.5s;
+    border-radius: 50px;
+    overflow: hidden; /* Ensure no content overflows out of the header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Dark overlay for better readability */
+.cover {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+}
+
+video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Optional image holder positioning */
+.imageHolder {
+    position: relative;
+    left: 600px;
+}
+
+/* Header contents - Central alignment */
+.header-contents {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vw;
+    max-width: 80%;
+    bottom: 20%;
+    left: 9vw;
+    transform: translateY(-10%);
+}
+
+.header-contents h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 2000;
+    color: #f3ede1; /* Light cream for text */
+    font-size: max(4.5vw, 22px);
+    font-family: "Playfair Display", serif;
+    line-height: 1.2;
+}
+
+.header-contents p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    font-size: 1.3vw;
+    color: #ffffff; /* White text for clarity */
+    line-height: 1.5;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Call-to-action button */
+.header-contents a {
+    border: 2px solid #8c6239; /* Coffee brown border */
+    color: #121111;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: #f3ede1; /* Light coffee cream background */
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.header-contents a:hover {
+    border: 2px solid #40b429; /* Darker brown on hover */
+    background-color: #40b429; /* Rich coffee brown hover effect */
+    color: #ffffff;
+    font-size: 20px;
+    transform: scale(1.05); /* Slightly reduce scaling for smoother transition */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1050px) {
+    .header-contents {
+        max-width: 45%;
+        left: 5vw; /* Adjust positioning for smaller screens */
+        bottom: 8%;
+        transform: translateY(-8%);
+    }
+
+    .header-contents h2 {
+        font-size: max(4vw, 20px); /* Smaller heading size */
+    }
+
+    .header-contents p {
+        font-size: 1.2vw; /* Adjust paragraph text size */
+    }
+}
+
+@media (max-width: 750px) {
+    .header-contents {
+        max-width: 55%;
+        left: 4vw; /* Adjust position */
+        bottom: 5%;
+        transform: translateY(-5%);
+    }
+
+    .header-contents p {
+        display: none; /* Hide paragraph on smaller screens */
+    }
+
+    .header-contents button {
+        padding: 2vw 4vw; /* Larger button padding for touch screens */
+    }
+}
