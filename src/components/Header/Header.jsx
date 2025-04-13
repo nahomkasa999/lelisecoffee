@@ -7,7 +7,7 @@ function Header() {
     <>
       <div className="Header" id="Home">
         <div className="cover"></div>
-        <video src={assets.video} autoPlay muted loop></video>
+        <img className= "changedbackground" src={"https://www.worldbank.org/content/dam/photos/780x439/2021/apr-2/coffee-cherries.jpg"}></img>
         <div className="header-contents">
           <h2>Experience Ethiopian Coffee!</h2>
           <p>

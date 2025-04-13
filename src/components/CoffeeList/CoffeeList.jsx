@@ -9,7 +9,7 @@ function CoffeeList() {
       <div className="OurProducts">
         <h1 className="Product">Our Products</h1>
         <p>
-          Lucy specialty Coffee exports 5,000 tons of Grade 1 quality Specialty
+          Lelise specialty Coffee exports 5,000 tons of Grade 1 quality Specialty
           Yirgachefe, Guji, Sidama and Limu Coffee per year, with all its rich
           and unique taste and flavor to its customers all over the world.
         </p>
