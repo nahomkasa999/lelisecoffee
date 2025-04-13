@@ -113,7 +113,7 @@
         font-size: 1.2vw;
     }
     .header-contents a:hover {
-        transform: none; /* Remove scaling on hover for smaller screens */
+        transform: none;
     }
 }
 
@@ -123,21 +123,37 @@
         border-radius: 5px;
     }
     .header-contents {
-        max-width: 55%;
-        left: 4vw;
-        bottom: 5%;
-        transform: translateY(-5%);
+        max-width: 90%; /* Increased width for better text display */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%) translateY(-50%); /* Center both horizontally and vertically */
+        top: 50%; /* Center vertically */
+        bottom: auto; /* Remove bottom positioning */
+        text-align: center; /* Center text */
+        padding: 0 20px; /* Add some padding */
+    }
+
+    .header-contents h2 {
+        font-size: max(5vw, 24px); /* Slightly larger font for mobile */
+        text-align: center;
+        width: 100%;
     }
 
     .header-contents p {
-        display: none;
+        font-size: max(0.5vw, 10px); /* Slightly larger font for mobile */
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
     }
 
-    .header-contents button {
-        padding: 2vw 4vw;
+    .header-contents a {
+        padding: 12px 24px; /* Fixed padding for mobile */
+        font-size: 16px; /* Fixed font size for mobile */
+        width: auto; /* Let the button size to its content */
+        text-align: center;
     }
+
     .header-contents a:hover {
-        transform: none; /* Remove scaling on hover for mobile */
-        font-size: max(1vw, 13px); /* Keep original font size on hover */
+        transform: none;
+        font-size: 16px;
     }
 }

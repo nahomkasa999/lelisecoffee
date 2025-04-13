@@ -7,7 +7,7 @@ function Header() {
     <>
       <div className="Header" id="Home">
         <div className="cover"></div>
-        <img className= "changedbackground" src={"https://www.worldbank.org/content/dam/photos/780x439/2021/apr-2/coffee-cherries.jpg"}></img>
+        <img className="changedbackground" src={"https://www.worldbank.org/content/dam/photos/780x439/2021/apr-2/coffee-cherries.jpg"} alt="Coffee background"></img>
         <div className="header-contents">
           <h2>Experience Ethiopian Coffee!</h2>
           <p>
