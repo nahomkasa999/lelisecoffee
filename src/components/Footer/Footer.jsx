@@ -12,7 +12,7 @@ function Footer() {
         <div className="footer-content-right">
           <h2>GET IN TOUCH</h2>
           <ul>
-            <li>+251982869468</li>
+            <li>+251984028660</li>
             <li>Leliseabebe038@gmail.com</li>
           </ul>
         </div>

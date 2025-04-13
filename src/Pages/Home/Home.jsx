@@ -13,7 +13,6 @@ function Home() {
       <About />
       <CoffeeList />
       <Team />
-      <Customer />
     </div>
   );
 }
