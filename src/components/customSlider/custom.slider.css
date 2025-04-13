@@ -1,0 +1,135 @@
+.container__slider {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #f3ede1;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .container__slider > button {
+    background-color: #6b4f31;
+    outline: none;
+    border: 0;
+    color: #f3ede1;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .container__slider > button:hover {
+    background-color: #8c6239;
+    transform: scale(1.1);
+  }
+  
+  .slider__btn-next {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+  
+  .slider__btn-prev {
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+  
+  .container__slider__links {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  
+  .container__slider__links-small {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    border-radius: 50%;
+    outline: none;
+    border: 0;
+    background-color: #6b4f31;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .container__slider__links-small-active {
+    background-color: #6b4f31;
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  
+  .slider__item {
+  position: relative;
+  left: 1135px;
+    box-sizing: border-box;
+    min-width: 100%;
+    height: auto;
+    overflow: hidden;
+    object-fit: cover;
+    height: auto;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+    padding: 15px;
+  }
+  
+  .slider__item-active-1 {
+    transform: translateX(0px);
+  }
+  
+  .slider__item-active-2 {
+    transform: translateX(-320px);
+  }
+  
+  .slider__item-active-3 {
+    transform: translateX(-650px);
+  }
+  
+  .slider__item-active-4 {
+    transform: translateX(-980px);
+  }
+  
+  .slider__item-active-5 {
+    transform: translateX(-1310px);
+  }
+  
+  .slider__item-active-6 {
+    transform: translateX(-1640px);
+  }
+  
+  .slider__item-active-7 {
+    transform: translateX(-1970px);
+  }
+  
+  .slider__item-active-8 {
+    transform: translateX(-2300px);
+  }
+  
+  .slider__item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #6b4f31;
+  }
+  

@@ -1,6 +1,7 @@
 import React from "react";
 import "./CoffeeList.css";
 import { assets, coffee_description } from "../../assets/assets";
+import CustomerSlider from "../customSlider/custom.slider.tsx";
 console.log(coffee_description);
 
 function CoffeeList() {
@@ -26,8 +27,8 @@ function CoffeeList() {
               </div>
             </div>
           ))}
-        </div>
-        <div className="CoffeList-Left">
+         </div>
+         <div className="CoffeList-Left">
           {coffee_description.slice(4, 8).map((item, index) => (
             <div className="items" key={index}>
               <img src={item.img} alt={item.name} />
@@ -38,7 +39,22 @@ function CoffeeList() {
             </div>
           ))}
         </div>
+
+        {/* for phones  */}
       </div>
+      <div className="CoffeList-phone">
+          <CustomerSlider>
+            {coffee_description.map((item, index) => (
+              <div className="items" key={index}>
+                <img src={item.img} alt={item.name} />
+                <div className="item-textContainer">
+                  <h1>{item.name}</h1>
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </CustomerSlider>
+          </div>
     </div>
   );
 }

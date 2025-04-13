@@ -3,7 +3,7 @@ import "./Home.css";
 import Header from "../../components/Header/Header";
 import CoffeeList from "../../components/CoffeeList/CoffeeList";
 import Team from "../../components/Team/Team";
-import Customer from "../../components/Customer/Customer";
+import Customer from "../../components/Customer/Customer"
 import About from "../About/About";
 
 function Home() {

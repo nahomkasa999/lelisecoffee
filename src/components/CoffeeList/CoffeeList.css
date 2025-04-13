@@ -92,41 +92,67 @@
 @media (max-width: 768px) {
     .items {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: space-around;
         overflow: hidden;
         padding: 0px;
-        width: 400px;
+        width: 350px; /* Reduced width to match slider */
+        margin: 0 auto;
+    }
+
+    .items:hover {
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+    }
+
+    .items img {
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .item-textContainer {
-        width: 20%;
+        width: 100%; /* Full width for text container */
+        padding: 10px;
     }
+
+    .item-textContainer h1 {
+        font-size: 20px; /* Slightly smaller font for mobile */
+    }
+
+    .item-textContainer p {
+        font-size: 14px; /* Smaller font for mobile */
+    }
+
     .OurProducts p {
         justify-content: center;
         align-items: center;
         width: 90%;
         text-align: center;
         font-size: 14px;
-        color: #4a4a4a; /* Subtle dark grey */
+        color: #4a4a4a;
     }
+
     #CoffeeList{
-        display: flex;
-        justify-content: center;
+        display: none;
+    }
+
+    .CoffeList-Right, .CoffeList-Left {
+        display: none;
+    }
+
+    .CoffeList-phone {
+        display: block;
         width: 100%;
-        padding-left: 500px;
-        overflow: scroll;
-        margin-bottom:100px ;
+        max-width: 350px; /* Reduced max width */
+        margin: 0 auto;
+        padding: 10px;
     }
-    .CoffeList-Right {
-        display: flex;
-        flex-direction: row;
+}
+
+/* Hide slider on desktop */
+@media (min-width: 769px) {
+    .CoffeList-phone {
+        display: none;
     }
-    .CoffeList-Left{
-        display: flex;
-        flex-direction: row;
-    }
-    
-   
 }

@@ -89,44 +89,55 @@
 }
 
 .header-contents a:hover {
-    border: 2px solid #40b429; /* Darker brown on hover */
-    background-color: #40b429; /* Rich coffee brown hover effect */
+    border: 2px solid #40b429;
+    background-color: #40b429;
     color: #ffffff;
     font-size: 20px;
-    transform: scale(1.05); /* Slightly reduce scaling for smoother transition */
+    transform: scale(1.05);
 }
 
 /* Media queries for responsiveness */
 @media (max-width: 1050px) {
     .header-contents {
         max-width: 45%;
-        left: 5vw; /* Adjust positioning for smaller screens */
+        left: 5vw;
         bottom: 8%;
         transform: translateY(-8%);
     }
 
     .header-contents h2 {
-        font-size: max(4vw, 20px); /* Smaller heading size */
+        font-size: max(4vw, 20px);
     }
 
     .header-contents p {
-        font-size: 1.2vw; /* Adjust paragraph text size */
+        font-size: 1.2vw;
+    }
+    .header-contents a:hover {
+        transform: none; /* Remove scaling on hover for smaller screens */
     }
 }
 
 @media (max-width: 750px) {
+    .Header {
+        height: 50vh;
+        border-radius: 5px;
+    }
     .header-contents {
         max-width: 55%;
-        left: 4vw; /* Adjust position */
+        left: 4vw;
         bottom: 5%;
         transform: translateY(-5%);
     }
 
     .header-contents p {
-        display: none; /* Hide paragraph on smaller screens */
+        display: none;
     }
 
     .header-contents button {
-        padding: 2vw 4vw; /* Larger button padding for touch screens */
+        padding: 2vw 4vw;
+    }
+    .header-contents a:hover {
+        transform: none; /* Remove scaling on hover for mobile */
+        font-size: max(1vw, 13px); /* Keep original font size on hover */
     }
 }
