@@ -1,8 +1,23 @@
-# React + Vite
+# Lelise Coffee
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A coffee shop website — React + Vite, with a navbar, home page, and footer, animated with GSAP and Swiper.
 
-Currently, two official plugins are available:
+Live: https://nahomkasa999.github.io/lelisecoffee
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Stack
+
+React 18 · Vite · React Router · GSAP · Swiper · ESLint
+
+## Run it
+
+```bash
+npm run dev      # vite — dev server
+npm run preview  # vite preview
+npm run lint     # eslint .
+```
+
+## Structure
+
+- `src/App.jsx` — Navbar, Home, Footer
+- `src/Pages/Home/` — home page
+- `src/components/` — Navbar, Footer
